@@ -23,11 +23,17 @@ const router = new VueRouter({
                     name: "Root",
                     component: importComponent('Dashboard'),
                 },
-                // To do list
+                // To do list guided
                 {
                     path: "/gd",
                     name: "Guided",
                     component: importComponent('TodoList/List'),
+                },
+                // To do list unguided
+                {
+                    path: "/ugd",
+                    name: "Unguided",
+                    component: importComponent('TodoList/ListUGD'),
                 },
             ]
         },
